@@ -6,8 +6,8 @@ if [ "$1" == "-help" ]; then
     exit 0;
 fi
 
-menu="$(bluetoothctl paired-devices | grep '' | cut -d' ' -f3-)"
-echo -e "${menu}\n" &&  echo -n 'Enter device number 1, 2 or 3 to choose: '
+menu="$(bluetoothctl paired-devices | grep '' | cut -d' ' -f3- | nl -w2 -s': ')"
+echo -e "${menu}\n" && echo -ne 'Enter device number 1, 2 or 3 to choose: '
 read to_connect
 
 case "$to_connect" in 
@@ -16,13 +16,8 @@ case "$to_connect" in
 	"3") device="6C:0D:E1:88:ED:93";;
 esac
 
-
 if bluetoothctl info "$device" | grep 'Connected: yes' -q; then
   bluetoothctl disconnect "$device" && info="$(bluetoothctl info ${device} | grep Name | cut -d' ' -f2-)" && notify-send "Disconnected from ${info}!"
 else
   bluetoothctl connect "$device" && info="$(bluetoothctl info ${device} | grep Name | cut -d' ' -f2-)" && notify-send "Connected to $info!"
 fi
-
-
-
-
