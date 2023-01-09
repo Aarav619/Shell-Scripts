@@ -21,7 +21,7 @@ yes | yay -S --noconfirm\
 	jetbrains-toolbox \
 	spotify-adblock \
 	spicetify-cli \
-	museeks-bin \
+	harmonoid-bin \
 	sway-fx \
 	ponymix \
 	ttf-icomoon-feather \
