@@ -17,6 +17,7 @@ yes | yay -S --noconfirm\
 	spotify \
 	expo-cli \
 	downgrade \
+	mongodb-compass \
 	ttf-icomoon-feather \
 	jetbrains-toolbox \
 	spotify-adblock \

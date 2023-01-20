@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery Notification Service
+
+[Service]
+ExecStart=/home/am/.config/scripts/battery-notification.sh
+Restart=always
+User=am
+
+[Install]
+WantedBy=default.target
