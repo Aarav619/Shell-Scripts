@@ -18,7 +18,6 @@ yes | yay -S --noconfirm\
 	expo-cli \
 	downgrade \
 	mongodb-compass \
-	ttf-icomoon-feather \
 	jetbrains-toolbox \
 	spotify-adblock \
 	spicetify-cli \
@@ -29,7 +28,6 @@ yes | yay -S --noconfirm\
 	googlekeep-bin \
 	notion-app \
 	postman-bin \
-	ttf-material-design-icons-git \
 	visual-studio-code-bin \
 	sway-audio-idle-inhibit-git \
 
