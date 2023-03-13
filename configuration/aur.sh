@@ -19,13 +19,10 @@ yes | yay -S --noconfirm\
 	downgrade \
 	mongodb-compass \
 	jetbrains-toolbox \
-	spotify-adblock \
 	spicetify-cli \
-	harmonoid-bin \
 	sway-fx \
 	ponymix \
 	ttf-icomoon-feather \
-	googlekeep-bin \
 	notion-app \
 	postman-bin \
 	visual-studio-code-bin \
