@@ -14,6 +14,8 @@ yes | yay -S --noconfirm\
 	google-chrome \
 	speedtest \
 	bluetuith-bin \
+	nordvpn-bin \
+	localsend-bin \
 	spotify \
 	expo-cli \
 	downgrade \
